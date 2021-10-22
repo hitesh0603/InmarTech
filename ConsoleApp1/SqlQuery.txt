@@ -1,0 +1,14 @@
+﻿1. Select * from Customer where Name %StartWith 'Joe'
+
+2. Select Customer.Name from Customer 
+Innrer join Order
+where Order.CreatedAt > DateTime(11/1/2016) and Order.CustomerId == Customer.CustomerId
+
+3. Select Sums(Product.Price) from Customer 
+Innrer join Order
+where Order.CustomerId == Customer.CustomerId and Customer.Name = 'Joe'
+
+4. Select Customer.Name from Customer 
+Group by Customer.Name
+Innrer join Order
+where Order.CustomerId == Customer.CustomerId
